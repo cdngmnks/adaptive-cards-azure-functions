@@ -1,1 +1,4 @@
-# adaptive-cards-renderer-azure-function
+# Adaptive Cards Renderer - Azure Function
+
+A simple Azure function returning an Adaptive Card as HTML.
+
