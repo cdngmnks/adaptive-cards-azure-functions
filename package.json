@@ -1,0 +1,14 @@
+{
+  "name": "adaptivecardrenderer",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "adaptivecards": "^2.9.0",
+    "jsdom": "^16.6.0"
+  },
+  "devDependencies": {}
+}
