@@ -1,0 +1,1 @@
+# adaptive-cards-renderer-azure-function
