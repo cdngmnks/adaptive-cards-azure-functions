@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"type\": \"AdaptiveCard\",\r\n    \"$schema\": \"http://adaptivecards.io/schemas/adaptive-card.json\",\r\n    \"version\": \"1.0\",\r\n    \"originator\": \"69f82080-24a3-4511-a861-4f9fa675d67f\",\r\n    \"hideOriginalBody\": true,\r\n    \"body\": [\r\n        {\r\n            \"type\": \"TextBlock\",\r\n            \"text\": \"Hello World!\",\r\n            \"wrap\": true\r\n        }\r\n    ]\r\n}"
+					"raw": "{\r\n    \"type\": \"AdaptiveCard\",\r\n    \"$schema\": \"http://adaptivecards.io/schemas/adaptive-card.json\",\r\n    \"version\": \"1.0\",\r\n    \"hideOriginalBody\": true,\r\n    \"body\": [\r\n        {\r\n            \"type\": \"TextBlock\",\r\n            \"text\": \"Hello World!\",\r\n            \"wrap\": true\r\n        }\r\n    ]\r\n}"
 				},
 				"url": {
 					"raw": "http://localhost:7071/api/adaptiveCardRenderer",
@@ -73,6 +73,77 @@
 					],
 					"cookie": [],
 					"body": "<div class=\"ac-container ac-adaptiveCard\" style=\"display: flex; flex-direction: column; justify-content: flex-start; box-sizing: border-box; flex: 0 0 auto; padding: 20px 20px 20px 20px; margin: 0px 0px 0px 0px; background-color: rgb(255, 255, 255); border: 1px solid #ffffff;\" tabindex=\"0\">\n    <div class=\"ac-textBlock\" style=\"overflow: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; color: rgb(51, 51, 51); font-weight: 400; text-align: left; line-height: 18.62px; word-wrap: break-word; box-sizing: border-box; flex: 0 0 auto;\"></div>\n</div>"
+				}
+			]
+		},
+		{
+			"name": "adaptiveCardTemplating",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"template\" : {\r\n        \"type\": \"AdaptiveCard\",\r\n        \"version\": \"1.0\",\r\n        \"body\": [\r\n            {\r\n                \"type\": \"TextBlock\",\r\n                \"text\": \"Hello ${name}!\"\r\n            }\r\n        ]\r\n    },\r\n    \"data\" : {\r\n        \"name\" : \"World\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/adaptiveCardTemplating",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"adaptiveCardTemplating"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "adaptiveCardTemplating",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"template\" : {\r\n        \"type\": \"AdaptiveCard\",\r\n        \"version\": \"1.0\",\r\n        \"body\": [\r\n            {\r\n                \"type\": \"TextBlock\",\r\n                \"text\": \"Hello ${name}!\"\r\n            }\r\n        ]\r\n    },\r\n    \"data\" : {\r\n        \"name\" : \"World\"\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7071/api/adaptiveCardTemplating",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7071",
+							"path": [
+								"api",
+								"adaptiveCardTemplating"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 20 Jul 2021 09:57:33 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\r\n  \"type\": \"AdaptiveCard\",\r\n  \"version\": \"1.0\",\r\n  \"body\": [\r\n    {\r\n      \"type\": \"TextBlock\",\r\n      \"text\": \"Hello World!\"\r\n    }\r\n  ]\r\n}"
 				}
 			]
 		}

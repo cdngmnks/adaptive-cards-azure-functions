@@ -7,7 +7,9 @@
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
+    "adaptive-expressions": "^4.14.1",
     "adaptivecards": "^2.9.0",
+    "adaptivecards-templating": "^2.1.0",
     "jsdom": "^16.6.0"
   },
   "devDependencies": {}
