@@ -1,4 +1,4 @@
-# Adaptive Cards - Azure Functions
+# Adaptive Cards - Azure Functions (JavaScript)
 
 ## adaptiveCardRenderer
 
