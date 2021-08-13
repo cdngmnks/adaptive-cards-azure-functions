@@ -2,7 +2,7 @@
 
 ## adaptiveCardRenderer
 
-Funtion returning an Adaptive Card rendered as HTML, using the [Adaptive Card JavaScript SDK](https://docs.microsoft.com/en-us/adaptive-cards/sdk/rendering-cards/javascript/getting-started).
+Function returning an Adaptive Card rendered as HTML, using the [Adaptive Card JavaScript SDK](https://docs.microsoft.com/en-us/adaptive-cards/sdk/rendering-cards/javascript/getting-started).
 
 example request:
 ```javascript
